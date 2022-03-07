@@ -145,7 +145,7 @@ public class Address {
 
     public boolean isSameAddress(Address other)
     {
-        boolean isSame = this.equals(other); // implicit call of toString, identical String literal means same address
+        boolean isSame = this.toString().equals(other.toString()); // call of toString, identical String literals = same address
         return isSame;
     }
 }
